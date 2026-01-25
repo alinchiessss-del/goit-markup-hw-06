@@ -31,10 +31,17 @@ a {
     color: inherit;
 }
 
-.container {
+/* .container {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+} */
+
+.container {
+    /* width:1440px; */
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 .section {
@@ -54,7 +61,7 @@ a {
     overflow: hidden;
 }
 
-/* HEADER */
+/*--------------- HEADER---------------------- */
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
@@ -198,16 +205,25 @@ a {
     background-color: #404bbf;
 }
 
+/* ----------------FEATURES--------------- */
+.features {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
 .features-list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    /*  gap: 24px; */
+    gap: 72px;
 }
 
 .features-item {
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
+    width: 100%;
 }
 
-.features-icon-wrap {
+/* .features-icon-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,24 +232,31 @@ a {
     background-color: #f4f4fd;
     border: 1px solid #8e8f99;
     border-radius: 4px;
-}
+} */
 
 .features-item-title {
     margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 20px;
+    /* font-weight: 500; */
+    font-weight: 700px;
+    /* font-size: 20px; */
+    font-size: 36px;
     color: #2e2f42;
-    line-height: 1.2;
+    /* line-height: 1.2; */
+    line-height: 1.1;
+    text-align: center;
     letter-spacing: 0.02em;
 }
 
 .features-item-text {
+    /* font-weight: 400; */
+    font-weight: 500;
     font-size: 16px;
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
+/* ---------TEAM SECTION------------- */
 .team {
     background-color: #f4f4fd;
 }
@@ -287,7 +310,7 @@ a {
     color: #434455;
 }
 
-/* OUR PORTFOLIO */
+/*-------------- OUR PORTFOLIO----------------*/
 
 .portfolio-list {
     display: flex;
@@ -388,7 +411,7 @@ a {
     margin-top: 8px;
 }
 
-/* FOOTER */
+/* -----------------FOOTER -------------------*/
 
 .footer {
     padding: 100px 0;
@@ -537,7 +560,7 @@ a {
 }
 
 
-/* MODAL */
+/* -------------------MODAL------------------ */
 
 .modal-overlay {
     background-color: rgba(46, 47, 66, 0.4);
@@ -770,4 +793,31 @@ a {
 .modal-submit-btn:focus-visible {
     background-color: #404bbf;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*------------------ MEDIA------------------ */
+
+@media screen and (min-width:768px) {
+
+    .container {
+        max-width: 768px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .features {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .features-item {
+        width: calc((100% - 24px) / 2);
+
+    }
+
+    .features-list {
+        gap: 72px 24px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
