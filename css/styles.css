@@ -459,9 +459,10 @@ a {
 
 /* hero image desktop2x */
 
-@media (min-resolution: 2x) {
+@media screen and (min-width: 1158px) and (min-resolution: 2dppx) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/hero-desktop2x.jpg);
     }
 }
@@ -836,7 +837,7 @@ a {
 
 /* FOOTER MOBILE */
 .footer {
-    padding: 100px 0;
+    padding: 96px 0;
     background-color: #2e2f42;
 }
 
@@ -1042,6 +1043,10 @@ a {
         padding-left: 15px;
         padding-right: 15px;
         gap: 0;
+    }
+
+    .footer {
+        padding: 100px 0;
     }
 
     .footer-info {
