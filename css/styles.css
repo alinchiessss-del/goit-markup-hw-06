@@ -299,6 +299,11 @@ a {
     text-decoration: none;
 }
 
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+    text-decoration: none;
+}
+
 .mobile-menu-list {
     gap: 40px;
     display: flex;
@@ -1061,7 +1066,7 @@ a {
 
     .footer-subscribe {
         width: auto;
-        margin-left: 0;
+        margin-left: auto;
     }
 
 
